@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap');
+
+:root {
+--soft-Red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--dark-Desaturated-Cyan: hsl(167, 40%, 24%);
+--dark-Blue: hsl(198, 62%, 26%);
+--dark-Moderate-Cyan: hsl(168, 34%, 41%);
+
+--very-Dark-Blue: hsl(212, 27%, 19%);
+--very-Dark-Grayish-Blue: hsl(213, 9%, 39%);
+--dark-Grayish-Blue: hsl(232, 10%, 55%);
+--grayish-Blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+
+.attribution { 
+    padding: 1.5rem 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+
+figure {
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/desktop/image-header.jpg');
+    background-color: var(--very-Dark-Blue);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* 
+nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    color: var(--White);
+}
+
+nav a.active {
+    color: var(--very-Dark-Blue);
+    background-color: var(--White);
+    border-radius: 100px;
+}
+
+
+
+header .copy{
+    text-align: center;
+}
+
+header .copy img{
+    margin-top: 4rem;
+}
+
+.brand-name {
+    font-family: 'Barlow', sans-serif; 
+    font-size: 1.5rem;
+    color: var(--White);
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--White);
+    padding: 1rem 0 0 0;
+    margin: 0;
+} */
