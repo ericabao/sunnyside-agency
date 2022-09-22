@@ -240,6 +240,42 @@ a {
     padding: 3.5rem 2rem;
 }
 
+.copy .btn-text {
+    width: 150px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copy .btn-text.brand::after{
+    content: "";
+    background-color: #fff1b0;
+    width: 150px;
+    height: 12px;
+    border-radius: 6px;
+    display: block;
+    margin-top: -8px;
+}
+
+.copy .btn-text.brand:hover::after{
+    background-color: var(--Yellow);
+}
+
+.copy .btn-text.audience::after{
+    content: "";
+    background-color: #fdd0cb;
+    width: 150px;
+    height: 12px;
+    border-radius: 6px;
+    display: block;
+    margin-top: -8px;
+}
+
+.copy .btn-text.audience:hover::after{
+    background-color: var(--soft-Red);
+}
+
 .flex-item h3{
     font-family: Fraunces, serif;
     font-size: 2rem ;
@@ -481,21 +517,35 @@ footer ul{
         width: 150px;
         height: 25px;
         display: block;
-        text-align: center;
+        margin-left: 0;
     }
 
-    .copy .btn-text.yellow:hover{
-        background-image: url("/images/hoverAsset-Yellow.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: bottom 2px center;
+    .copy .btn-text.brand::after{
+        content: "";
+        background-color: #fff1b0;
+        width: 150px;
+        height: 12px;
+        border-radius: 6px;
+        display: block;
+        margin-top: -8px;
     }
 
-    .copy .btn-text.orange:hover{
-        background-image: url("/images/hoverAsset-Orange.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: bottom 2px center;
+    .copy .btn-text.brand:hover::after{
+        background-color: var(--Yellow);
+    }
+
+    .copy .btn-text.audience::after{
+        content: "";
+        background-color: #fdd0cb;
+        width: 150px;
+        height: 12px;
+        border-radius: 6px;
+        display: block;
+        margin-top: -8px;
+    }
+
+    .copy .btn-text.audience:hover::after{
+        background-color: var(--soft-Red);
     }
  
     .flex-item h3{
@@ -634,7 +684,6 @@ footer ul{
         justify-content: center;
         align-items: center;
     }
-    
     
     .portfolio picture {
         flex-basis: 25%;
