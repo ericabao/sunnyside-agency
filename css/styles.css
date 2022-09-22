@@ -326,8 +326,11 @@ a {
     align-items: center;
 }
 
-.portfolio img {
+.portfolio picture {
     flex-basis: 50%;
+}
+
+.portfolio picture  img{
     width: 100%;
     height: 100%;
     display: block;
@@ -535,13 +538,16 @@ footer ul{
         align-items: center;
     }
     
-    .portfolio img {
-        flex-basis: 50%;
+    .portfolio picture {
+        flex-basis: 25%;
+    }
+    
+    .portfolio picture  img{
         width: 100%;
         height: 100%;
         display: block;
     }
-
+    
     .reviews {
         display: flex;
         justify-content: space-between;
@@ -629,13 +635,17 @@ footer ul{
         align-items: center;
     }
     
-    .portfolio img {
-        flex-basis: 50%;
+    
+    .portfolio picture {
+        flex-basis: 25%;
+    }
+    
+    .portfolio picture  img{
         width: 100%;
         height: 100%;
         display: block;
     }
-    
+
     .nav-footer {
         width: 30%;
         margin: 0 auto;
