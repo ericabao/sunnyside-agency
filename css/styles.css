@@ -329,7 +329,8 @@ a {
 .portfolio img {
     flex-basis: 50%;
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: block;
 }
 
 footer {
