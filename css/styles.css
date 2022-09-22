@@ -187,7 +187,7 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.hero h2 {
+.hero h1 {
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
     font-size: 2.75rem;
@@ -473,7 +473,7 @@ footer ul{
         min-height: 45rem;
     }
 
-    .hero h2 {
+    .hero h1 {
         font-family: 'Fraunces', serif;
         font-weight: 900;
         font-size: 5rem;
