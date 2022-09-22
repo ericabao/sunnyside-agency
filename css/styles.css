@@ -13,6 +13,7 @@
 --dark-Grayish-Blue: hsl(232, 10%, 55%);
 --grayish-Blue: hsl(210, 4%, 67%);
 --White: hsl(0, 0%, 100%);
+--Whitesh: hsla(0,0%,100%,0.8);
 }
 
 :not(.skip-link):focus {
@@ -122,6 +123,14 @@ a {
     padding: 2rem 0;
 }
 
+.nav-menu-mobile .nav-link.active {
+    background-color: var(--Yellow);
+    text-transform: uppercase;
+    color: var(--very-Dark-Blue);
+    padding: 1rem 3rem;
+    border-radius: 100px;
+}
+
 .nav-menu-mobile-wrap-active{
     display: block;
 }
@@ -135,27 +144,20 @@ a {
 }
 
 .branding {
-    font-size: 2rem;
     padding-left: 1.5rem;
-    color: var(--White);
-    font-family: Barlow, sans-serif;
-    font-weight: 600;
-}
-
-.active {
-    background-color: rgb(74, 118, 212);
-    padding: 1rem 3rem;
-    border-radius: 100px;
 }
 
 .nav-link {
     transition: 0.7s ease;
 }
 
-.nav-link.active {
-    background-color:var(--Yellow);
+.nav-link:active,
+.nav-link:hover {
+    background-color: var(--Whitesh);
     text-transform: uppercase;
     color: var(--very-Dark-Blue);
+    padding: 1rem 3rem;
+    border-radius: 100px;
 }
 
 .bar {
@@ -185,8 +187,6 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Hero section */
-
 .hero h2 {
     font-family: Fraunces, serif;
     text-transform: uppercase;
@@ -198,13 +198,10 @@ a {
     margin-top: 6rem;
 }
 
-/* main section */
-
 .flex-container{
     width: 100%;
     margin: 0 auto;
 }
-
 
 .flex-container .flex-item{
     text-align: center;
@@ -220,8 +217,8 @@ a {
 
 .flex-item figcaption{
     position: absolute;
-    bottom: 0;
-    padding: 0 1.5rem;
+    top: 10rem;
+    padding: 0 1.5rem .25rem 1.5rem;
 }
 
 .flex-item figcaption h4{
@@ -340,33 +337,47 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-Moderate-Cyan);
-}
-
-footer .branding {
-    font-family: Barlow, sans-serif;
-    color: var(--dark-Desaturated-Cyan);
+    background-color: #90d4c5;
+    padding: 4rem 0;
 }
 
 footer ul{
     padding: 0;
 }
 
+.branding-footer{
+    margin-bottom: 3rem;
+}
+
 .nav-footer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
+    gap: 2rem;
 }
 
 .nav-footer li a {
     color: var(--dark-Desaturated-Cyan);
 }
 
+.nav-footer li a:hover {
+    color: var(--White);
+}
+
 .social-media {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.social-media a{
+    cursor: pointer;
+}
+
+.social-media .social-media-icon:active,
+.social-media .social-media-icon:hover{
+    fill: var(--White);
 }
 
 .attribution {
@@ -378,6 +389,10 @@ footer ul{
     .hamburger,
     .nav-menu-mobile-wrap {
         display: none;
+    }
+
+    header {
+        padding-top: 1rem;
     }
 
     .navbar {
@@ -454,10 +469,31 @@ footer ul{
     }
 
     .flex-item > .copy{
-       padding: 1rem; 
+       padding: 1.5rem; 
        text-align: left;
     }
 
+    .copy .btn-text {
+        width: 150px;
+        height: 25px;
+        display: block;
+        text-align: center;
+    }
+
+    .copy .btn-text.yellow:hover{
+        background-image: url("/images/hoverAsset-Yellow.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom 2px center;
+    }
+
+    .copy .btn-text.orange:hover{
+        background-image: url("/images/hoverAsset-Orange.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom 2px center;
+    }
+ 
     .flex-item h3{
         font-family: Fraunces, serif;
         font-size: 1.5rem ;
@@ -472,9 +508,9 @@ footer ul{
         font-family: Barlow, sans-serif;
         font-size: .9rem;
         font-weight: 600;
-        line-height: 1.5rem;
+        line-height: 1.25rem;
         letter-spacing: 1px;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
     }
     
     .flex-item a{
@@ -494,8 +530,12 @@ footer ul{
     .reviews {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         gap: 2rem;
+    }
+
+    .reviews article p{
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .nav-footer {
@@ -512,8 +552,13 @@ footer ul{
         display: none;
     }
 
+    footer {
+        padding: 5rem 0;
+        background-color: #90d4c5;
+    }
+
     .flex-item > .copy{
-        padding: 3rem;
+        padding: 5rem;
     }
 
     .flex-item h3{
@@ -541,6 +586,32 @@ footer ul{
         text-transform: uppercase;
         letter-spacing: 2px;
         color: var(--very-Dark-Blue);
+    }
+
+    .flex-item figcaption{
+        position: absolute;
+        top: 20rem;
+        padding: 0 8rem;
+    }
+
+    .review-container h3 {
+        font-size: 2.5rem;
+    }
+
+    .reviews {
+        gap: 4rem;
+    }
+
+    .reviews article p{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .nav-footer {
+        width: 30%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        gap: 1.5rem;
     }
 }
         
