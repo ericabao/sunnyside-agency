@@ -188,7 +188,7 @@ a {
 }
 
 .hero h2 {
-    font-family: Fraunces, serif;
+    font-family: 'Fraunces', serif;
     text-transform: uppercase;
     font-size: 2.75rem;
     line-height: 100%;
@@ -474,6 +474,8 @@ footer ul{
     }
 
     .hero h2 {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
         font-size: 5rem;
         margin-top: 6rem;
     }
