@@ -221,7 +221,7 @@ a {
     padding: 0 1.5rem .25rem 1.5rem;
 }
 
-.flex-item figcaption h4{
+.flex-item figcaption h3{
     font-family: Fraunces, serif;
     font-size: 1.5rem;
     color: var(--dark-Desaturated-Cyan);
