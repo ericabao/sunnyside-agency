@@ -143,8 +143,14 @@ a {
     margin: 16px 0;
 }
 
-.branding {
+.brand {
     padding-left: 1.5rem;
+}
+
+.brand .brand-icon {
+    width: 50px;
+    height: auto;
+    fill: #fff;
 }
 
 .nav-link {
@@ -385,8 +391,9 @@ footer ul{
     padding: 0;
 }
 
-.branding-footer{
+.brand.footer{
     margin-bottom: 3rem;
+    padding-left: 0;
 }
 
 .nav-footer {
@@ -407,12 +414,23 @@ footer ul{
 }
 
 .social-media {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    margin: 0;
 }
 
 .social-media a{
     cursor: pointer;
+}
+
+.social-media .social-media-icon{
+    width: 48px;
+    height: 48px;
+    margin: 0.5em;
+    fill: #2C7566;
 }
 
 .social-media .social-media-icon:active,
@@ -617,6 +635,14 @@ footer ul{
         justify-content: space-evenly;
         gap: 1rem;
     }
+
+    .social-media {
+        width: 15%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        gap: .5rem;
+    }
+
 } 
 
 @media (min-width:992px){
@@ -697,11 +723,19 @@ footer ul{
         display: block;
     }
 
+
     .nav-footer {
         width: 30%;
         margin: 0 auto;
         justify-content: space-evenly;
         gap: 1.5rem;
+    }
+
+    .social-media {
+        width: 15%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        gap: .5rem;
     }
 }
         
